@@ -84,7 +84,7 @@ net = Network(env, device)
 net = net.to(device)
 
 # net.load('./atari_model.pt')
-net.load_state_dict(torch.load('atari_double_model.pt'))
+net.load_state_dict(torch.load('models/breakout_double.pt'))
 net.eval()
 print("Load xong r ne")
 obs = env.reset()
